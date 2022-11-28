@@ -41,19 +41,22 @@ p {
 
 
 /* || Header, Navigation, Hero */
-.header {
+header {
     background-color: #2a607c;
     color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 20px;
 }
 
-
-/* TODO: make flexbox (??) to have them appear in nav bar sequentially. They are currently reversed. */
-.header nav ul li {
+header nav ul {
     float: right;
-    font-size: 20px;
     list-style-type: none;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+    font-size: 20px;
     margin-left: 25px;
     margin-right: 20px;
     padding-top: 15px;
@@ -74,13 +77,13 @@ p {
 
 
 /* || Main content boxed-containers */
-.boxed-content {
+main {
     display: inline-block;
     height: auto;
     margin-left: 20px;
     width: 75%;
 }
-.boxed-content img {
+main img {
     max-height: 200px;
 }
 
@@ -105,7 +108,7 @@ p {
 
 
 /* Sidebar Content */
-.left-sidebar-benefits {
+aside {
     background-color: #2589bd;
     clear: both;
     float: right;
@@ -115,19 +118,16 @@ p {
     width: 20%;
 }
 
-.left-sidebar-benefits img {
+aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-#benefit-lead,
-#benefit-brand,
-#benefit-cost {
+aside section {
     color: #ffffff;
     margin-bottom: 32px;
 }
-
 
 /* || footer */
 .footer {
@@ -136,5 +136,3 @@ p {
     padding: 30px;
     text-align: center;
 }
-
-/* TODO: Don't forget to write a README file!!! */
